@@ -1,3 +1,1 @@
-web: gunicorn website.wsgi --log-file -
-
-web: python manage.py migrate && gunicorn website.wsg
+web: gunicorn website.wsgi --bind 0.0.0.0:$PORT --workers 3 --timeout 120 --log-file -
