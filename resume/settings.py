@@ -111,8 +111,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = ['static/']
 
 
-# Push sute online
-STATICFILES_STORAGE = 'whitenoise.storage.CompressdManifestStaticFilesStorage'
+# Push site online
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
